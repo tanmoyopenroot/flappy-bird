@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet">
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.22/addons/p5.dom.js"></script>
+  <script src="sprite.js"></script>
+  <script src="bird.js"></script>
+  <script src="pipe.js"></script>
+  <script src="sketch.js"></script>
+  <style type="text/css" media="screen">
+  html,
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .no_select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .flap_info .head {
+    font-size: 4rem;
+    line-height: 3.75rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    pointer-events: none;
+  }
+  
+  .blue {
+    color: #02b3e4!important;
+  }
+
+  .brown {
+    color: #CEA883 !important
+  }
+  
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+  }
+
+  .wrapper .case_study a,
+  .wrapper .by a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    text-decoration: none;
+  }
+
+  .wrapper .case_study{
+    border-bottom: 2px solid #CEA883;
+    padding: 10px 0px;
+    width: 150px;
+  }
+
+  .wrapper .case_study a{
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .wrapper .product_name span{
+    font-size: 80px;
+    display: block;
+    text-align: left;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  canvas {
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, .15);
+    transition: box-shadow .3s ease;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .box{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 14%;
+    height: 80%;
+    width: 10%;
+    transform: translateY(-50%);
+    background-color: #CEA883;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+      <div class="by">
+        <a href="https://www.linkedin.com/in/tanmoyopenroot/" title="LinkedIn" class="brown no_select">Tanmoy Bhowmik</a>
+      </div>
+      <div class="product_name">
+        <span class="no_select">Flappy</span>
+        <span class="no_select">Bird</span>
+      </div>
+    </header>
+    <div class="case_study">
+      <a href="https://github.com/tanmoyopenroot" title="" class="no_select">Case Study</a>
+    </div>
+  </div>
+  <div class="box"></div>
+</body>
+
+</html>
